@@ -7,6 +7,8 @@ export default function Player({
   onChangeName,
 }) {
   const [playerName, setPlayerName] = useState(initialName);
+
+  //2-way-binding (input -> state & state -> input)
   const [isEditing, setIsEditing] = useState(false);
 
   function handleEditClick() {
